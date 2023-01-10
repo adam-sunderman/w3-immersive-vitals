@@ -14,6 +14,6 @@ RELEASE_NAME=ImmersiveVitals
 git config --local core.hooksPath .githooks
 
 # do not update anything below this line
-pushd ..
+pushd .. >> /dev/null
 MOD_PATH=`pwd`
-popd
+popd >> /dev/null
