@@ -1,9 +1,8 @@
 # manual github action used to build a release off of master based off of provided version parameter
-# TODO setup ENV for project
 
 name: Publish Release
 env:
-  RELEASE_NAME={yourReleaseNameSameAsVariablesSh}
+  RELEASE_NAME=ImmersiveVitals
 
 on:
   workflow_dispatch:

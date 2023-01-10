@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# TODO update this path to point to your witcher 3 directory
-GAME_PATH={yourGameLocation}
-BIN_FOLDER_NAME={x64|x64_dx12}
-W3_USER_SETTINGS_PATH={witcher3DocumentsLocation}
+# Game variables
+GAME_PATH="G:/GOG/The Witcher 3 Wild Hunt GOTY"
+BIN_FOLDER_NAME="x64"
+W3_USER_SETTINGS_PATH="C:/Users/amsun/Documents/The Witcher 3"
 
-# TODO update these based on your mod you are developing
-NEXUS_MOD_ID={yourModId}
-MOD_NAME={yourModName}
-RELEASE_NAME={yourReleaseFolderName}
+# mod vars
+NEXUS_MOD_ID=7609
+MOD_NAME=modImmersiveVitals
+RELEASE_NAME=ImmersiveVitals
 
 # ensure prehooks are set up :)
 git config --local core.hooksPath .githooks
