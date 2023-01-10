@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UserConfig>
-	<!--TODO update prefix here with mod details. use menu strings community patch for categorizing settings-->
-	<Group id="{PREFIX}general" displayName="Mods.{menu-strings-cat}.{prefix}_name">
-	<PresetsArray>
-		<Preset id="0" displayName="{prefix}_default" >
+	<Group id="IMMVgeneral" displayName="Mods.user_interface.immv_name">
+	<!-- <PresetsArray>
+		<Preset id="0" displayName="immv_default" >
 			<Entry varId="{PREFIX}modEnabled" value="1" />
 		</Preset>
-	</PresetsArray>
+	</PresetsArray> -->
 	<VisibleVars>
-		<Var id="{PREFIX}modEnabled" displayName="{prefix}_mod_enabled" displayType="TOGGLE" />
+		<Var id="IMMVhealthEffectEnabled" displayName="immv_health_effect_enabled" displayType="TOGGLE" />
+		<Var id="IMMVhealthEffectIntensity" displayName="immv_health_effect_intensity" displayType="SLIDER;0;10;10"/>
+		<Var id="IMMVhealthCriticalEffectEnabled" displayName="immv_health_critical_effect_enabled" displayType="TOGGLE" />
+		<Var id="IMMVhealthCriticalEffectIntensity" displayName="immv_health_critical_effect_intensity" displayType="SLIDER;0;10;10"/>
+		<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+
+		<Var id="IMMVstaminaBlurEnabled" displayName="immv_stamina_blur_enabled" displayType="TOGGLE" />
 	</VisibleVars>
 	</Group>
 </UserConfig>

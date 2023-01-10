@@ -13,7 +13,7 @@ source encode-w3-strings.sh
 cp ../strings/* "$GAME_PATH/mods/$MOD_NAME/content/"
 
 echo "installing menu..."
-cp mod-menu.xml "$GAME_PATH/bin/config/r4game/user_config_matrix/pc/${MOD_NAME}.xml"
+cp ../mod-menu.xml "$GAME_PATH/bin/config/r4game/user_config_matrix/pc/${MOD_NAME}.xml"
 
 if test -f "$MOD_PATH/input.settings.begin.txt"; then
 	echo "installing input settings..."
@@ -29,3 +29,10 @@ if test -f "$MOD_PATH/user.settings.begin.txt"; then
 	cat "$MOD_PATH/user.settings.begin.txt" >> dx12user.settings
 	popd > /dev/null
 fi
+
+pushd "$GAME_PATH/bin/config/r4game/user_config_matrix/pc" > /dev/null
+if test -f tw3-menufilelist-updater.exe; then
+	echo "updating mod list files..."
+	./tw3-menufilelist-updater.exe
+fi
+popd > /dev/null

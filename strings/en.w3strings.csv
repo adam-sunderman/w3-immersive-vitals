@@ -10,7 +10,11 @@
 2117609008|        |panel_user_interface|User Interface
 2117609009|        |panel_visuals_and_graphics|Visuals and Graphics
 2117609010|        |panel_miscellaneous|Miscellaneous
-2117609001|        |panel_{prefix}_name|{Mod Name}
-2117609003|        |preset_Mods_{menu-strings-cat}_{prefix}_name|{Mod Name}
-2117609005|        |preset_value_{prefix}_default|Default
-2117609006|        |option_{prefix}_mod_enabled|MOD ENABLED
+2117609011|        |panel_immv_name|Immersive Vitals
+2117609013|        |preset_Mods_user_interface_immv_name|Immersive Vitals
+2117609014|        |preset_value_immv_default|Default
+2117609015|        |option_immv_health_effect_enabled|Enable Health Effect
+2117609016|        |option_immv_health_effect_intensity|Health Effect Intensity
+2117609017|        |option_immv_health_critical_effect_enabled|Enable Critical Health Effect
+2117609018|        |option_immv_health_critical_effect_intensity|Critical Health Effect Intensity
+2117609019|        |option_immv_stamina_blur_enabled|Enable Stamina Screen Blur
