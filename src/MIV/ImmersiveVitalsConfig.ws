@@ -28,6 +28,7 @@ function IMMV_getHealthConfig() : IMMVStatConfig
 
 	config.stat = BCS_Vitality;
 	config.enabled = (bool) theGame.GetInGameConfigWrapper().GetVarValue('IMMVgeneral', 'IMMVhealthEffectEnabled');
+	config.intensity.magnitude = StringToFloat(theGame.GetInGameConfigWrapper().GetVarValue('IMMVgeneral', 'IMMVhealthEffectIntensity')) / 10.0f;	
 	return config;
 }
 

@@ -78,7 +78,7 @@ class VitalsDisplayManager {
 			if(healthPercent < .98) {
 				EnableCatViewFx( 2.0f );
 
-				colorDrain = 1.0f - healthPercent;
+				colorDrain = healthConfig.intensity.magnitude - healthPercent;
 				if(healthPercent < .5f) {
 					redSky = MaxF(
 						redSky, 
